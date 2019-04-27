@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doyouloveme</title>
+</head>
+<body>
+<b style="position: absolute; top: 150px;left: 90px;font-size: 20px">Do You Love Me</b>
+<br/>
+<input  style="position: absolute;left: 100px;top: 200px" type="button" value="Yes" onclick="ham()"/>
+<input style="position: absolute ;left: 150px;top: 200px" type="button" id="no" value="No" onmousemove="ham1()"/>
+<script>
+    function ham() {
+            alert("<3 , I Love You Too");
+    }
+        function ham1() {
+            let w=window.innerWidth;
+            let h=window.innerHeight;
+            let w1=Math.round(Math.random()*w);
+            let h1=Math.round(Math.random()*h);
+            let element= document.getElementById("no");
+            element.style.left=w1+"px";
+            element.style.top=h1+"px";
+
+
+    }
+</script>
+</body>
+</html>
